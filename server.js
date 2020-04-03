@@ -2,6 +2,7 @@ const express= require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require("fs");
+const cors = require('cors');
 // const cors = require('cors');
 
 const app = express();
@@ -10,10 +11,7 @@ const accounts = {
     accounts: []
 }
 
-app.use((req,res,next) =>{
-    res.header("Access-Control-Allow-Origin", "*");
-    next();
-})
+app.use(cors());
 
 fs.mkdir("database",() =>{
     console.log(" Directory Succesfully Created");
