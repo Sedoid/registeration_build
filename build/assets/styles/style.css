@@ -1,0 +1,28 @@
+.jumbotron{
+    height: 60vh !important;
+    background-color: red;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px,1fr));
+padding-bottom: 0;
+padding-top:0;
+}
+
+.jumbotron div{
+    padding-top:0;
+}
+
+.caption{
+    background-color: green;
+}
+
+.image{
+    background-color: yellow;
+}
+
+ aside{
+    border: 2px solid black;
+    padding: 10px;
+ 
+}
+
